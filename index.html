@@ -12,6 +12,8 @@
       margin: 0;
       padding: 0;
     }
+
+    /* 通用容器样式 */
     .container {
       max-width: 800px;
       margin: 30px auto;
@@ -21,30 +23,40 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
     }
-    h3 {
+
+    h3, h4 {
+      margin-top: 0;
       color: #333;
       border-bottom: 2px solid #007acc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-      text-align: center;
+      padding-bottom: 8px;
     }
+
+    h4 {
+      border-bottom-color: #6c757d;
+    }
+
+    /* 模型项样式 */
     .model-item {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       padding: 12px;
       border-left: 4px solid #007acc;
       background-color: #f8f9fa;
     }
+
     .model-label {
       font-weight: bold;
       font-size: 1.1em;
       margin-right: 8px;
     }
+
     .strong {
       color: #d63384;
     }
+
     .second {
       color: #20c997;
     }
+
     .model-name {
       font-family: 'Courier New', Courier, monospace;
       background-color: #e9ecef;
@@ -52,26 +64,34 @@
       border-radius: 4px;
       font-size: 0.95em;
     }
+
     .download-link {
       margin-left: 12px;
       color: #007acc;
       text-decoration: none;
       font-weight: 500;
     }
+
     .download-link:hover {
       text-decoration: underline;
     }
+
+    /* 页脚 */
     .footer {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 20px;
       color: #888;
       font-size: 0.85em;
+      padding-top: 15px;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
 <body>
+
+  <!-- 官方权重容器 -->
   <div class="container">
-    <h3>KataGo 权重文件</h3>
+    <h3>KataGo 官方权重</h3>
 
     <div class="model-item">
       <span class="model-label strong">推荐：1</span>
@@ -92,8 +112,26 @@
     </div>
 
     <div class="footer">
-      本网页更新于 20250829
+      此板块更新于 20250829
     </div>
   </div>
+
+  <!-- 第三方权重容器 -->
+  <div class="container">
+    <h4>第三方权重</h4>
+
+    <div class="model-item">
+      <span class="model-name">FMSWA5.bin.gz</span>
+      <a href="https://ghfast.top/https://github.com/xiaolongcml/kata/raw/refs/heads/main/FMSWA5.bin.gz?download=" 
+         class="download-link" target="_blank">
+        下载
+      </a>
+    </div>
+
+    <div class="footer">
+      此板块更新于20250830
+    </div>
+  </div>
+
 </body>
 </html>
